@@ -16,28 +16,29 @@
 
 /* HEADER START */
 
-.fix-size-header{
+.header{
+    padding: 25px 10px;
+}
+
+.header .fix-size-header{
     margin: 0 auto;
-    width: 1290px;
+    max-width: 1290px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.logonav{
+ .logonav{
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
     flex-grow: 0.5;
-}
-
-.logonav{
     text-align: center;
 }
 
 .container {
-    padding: 25px 0;
+    
     background-color: #FFFFFF;
 }
 
@@ -61,8 +62,10 @@ a {
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-items: center;
-    flex-grow: 1;
 }
+/* .item:not(:last-child) {
+    margin-left: 57px;
+} */
 
 .nav .item a{
     font-family: "GraphikLCG-Regular";
@@ -71,46 +74,42 @@ a {
     line-height: 20px;
     color: #000000;
     text-decoration: none;
+    margin-left: 57px;
+}
+
+.button-head{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.button-header:first-child {
+    margin-right: 10px;
 }
 
 .button-header {
-    display: flex;
-    justify-content: flex-end;
+    font-family: "GraphikLCG-Semibold";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    width: 120px;
+    height: 45px;
+    border-radius: 0px;
 }
 
 .but-log{
-    font-family: "GraphikLCG-Semibold";
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 45px;
-    text-align: center;
-    width: 120px;
-    height: 45px;
-    border-radius: 0px;
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.but-reg {
-    margin-left: 10px;
-    font-family: "GraphikLCG-Semibold";
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 45px;
-    text-align: center;
-    width: 120px;
-    height: 45px;
-    background-color: #FF6336;
-    border-radius: 0px;
-    border: none;
-}
-
-.but-log a{
     color: #000000;
 }
 
-.but-reg a{
+.but-reg {
+    border-radius: 0px;
+    border: none;
     color: #FFFFFF;
+    background-color: #FF6336;
+    
 }
 
 .header-hr{
@@ -642,3 +641,81 @@ padding-right: 67px
 }
 
 /* FOOTER END */
+
+@media (max-width:1100px) {
+    .header .fix-size-header{
+        flex-direction: column;
+        padding: 25px 15px
+    }
+
+    .button-header{
+        margin-top: 25px;
+    }
+
+    .nav {
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+
+    .button-header{
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media (max-width:800px) {
+    
+
+    .logonav {
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 20px;
+    }
+
+    .list .item a {
+        margin-left: 0px;
+        font-size: 20px;
+    }
+
+    .list {
+        width: 550px;
+        justify-content: space-between;
+    }
+
+    .logonav img{
+        width: 180px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width:600px) {
+    .fix-size-header .list {
+        flex-direction: column;
+        width: auto;
+    }
+    .fix-size-header .list a{
+        font-size: 25px;
+    }
+
+    .list .item {
+        padding-bottom: 10px;
+    }
+
+    .fix-size-header .button-head {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+
+    .button-header{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .button-header:first-child {
+        margin-right: 10px;
+    }
+}
