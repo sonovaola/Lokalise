@@ -123,6 +123,10 @@ a {
 .sec-one {
     padding: 130px 0 172px;
     background-color: #FFFFFF;
+}
+
+
+.sec-one-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -305,7 +309,7 @@ span{
     padding: 119px 66px 158px 66px;
 }
 
-.card-first {
+.sec-fourth {
     margin-top: 150px;
     background-color:#FFF8E4;
     
@@ -395,10 +399,19 @@ span{
     text-decoration: underline;
 }
 
+.sec-sixth{
+    background-color: #C9E8F2;
+}
+
 .quote{
-    display: flex;
-    background: #C9E8F2;
+    background-color: #C9E8F2;
     margin-top: 187px;
+    display: flex;
+}
+
+.quote-content{
+    display: flex;
+    flex-direction: column;
 }
 
 .quote-text{
@@ -417,11 +430,15 @@ span{
     padding-bottom: 7px;
 }
 
+.quote-logo{
+    padding-bottom: 165px;
+}
+
 .quote-img{
     padding: 53px 0 105px;
 }
 
-.translation {
+.sec-seventh {
     background-color: #DABC98;
 }
 
@@ -450,8 +467,11 @@ padding-right: 67px
     border-radius: 0px;
 }
 
-.integration {
+.sec-eighth{
     background-color: #fff;
+}
+
+.integration {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -473,10 +493,11 @@ padding-right: 67px
     line-height: 30px;  
     text-align: center;
     color: #000000;
+    padding-bottom: 32px;
 }
 
 .img-integration {
-    padding: 32px 0 25px;
+    margin-bottom: 25px;
     vertical-align: middle;
     width: 1023px;
     height: 445px;
@@ -494,8 +515,11 @@ padding-right: 67px
     height: 60px;
 }
 
-.go-free{
+.sec-tenth{
     background: #FF9C7D;
+}
+
+.go-free{
     margin-top: 162PX;
     padding-top: 119PX;
     display: flex;
@@ -541,10 +565,13 @@ padding-right: 67px
 /* MAIN END */
 /* FOOTER START */
 
+.footer-section{
+    background: #EEEEEE;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
-    background: #EEEEEE;
 }
 
 .footer-box1 {
