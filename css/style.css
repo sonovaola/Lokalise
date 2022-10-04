@@ -551,7 +551,7 @@ a {
 
 .footer {
     display: grid;
-    grid-template-columns: 420px repeat(4, 1fr);
+    grid-template-columns: 2fr repeat(4, 1fr);
     justify-items: stretch;
     justify-content: space-around;
 }
@@ -834,8 +834,8 @@ a {
 
     .cardbox {
         display: grid;
-        grid-template-columns: 266px 266px 266px;
-        justify-content: space-around;
+        grid-template-columns: repeat(2, 400px);
+        justify-content: space-evenly;
         padding: 0;
     }
 
@@ -894,7 +894,7 @@ a {
 
     .footer {
         margin: 0 15px;
-        grid-template-columns: 400px 1.5fr 1fr;
+        grid-template-columns: 380px 1.8fr 1fr;
     }
     
     .footer-list-item.list-three .footer-list-title, .footer-list-item.list-four .footer-list-title {
@@ -943,6 +943,7 @@ a {
     .footer-list a {
         line-height: 16px;
     }
+
 }
     
 
@@ -976,7 +977,7 @@ a {
 
     .cardbox {
         padding: 0px 15px;
-        grid-template-columns: repeat(3, 200px);
+        grid-template-columns: repeat(2, 250px);
     }
 
     .cardbox-title {
@@ -1142,6 +1143,10 @@ a {
         width: 100%;
     }
     
+    .foot{
+        justify-content: space-around;
+    }
+
     .footer {
         grid-template-columns: 1fr 1fr 1fr 1fr;}
 
@@ -1254,8 +1259,12 @@ a {
     }
 
     .cardbox {
-        grid-template-columns: repeat(2, 250px);
-        padding: 0px 10px;
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .cardbox-content {
+        padding-top: 30px;
     }
 
     .cardbox-title {
@@ -1265,6 +1274,7 @@ a {
 
     .cardbox-content-text{
         padding: 20px 0 20px;
+        font-size: 22px;
     }
 
     .sec-third {
@@ -1342,7 +1352,35 @@ a {
     }
     
     .footer{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-list-item.list-one{
+        grid-column-end: 1;
+        grid-column-start: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .footer-list-item.list-two{
+        grid-column-end: 2;
+        grid-column-start: 3;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .footer-list-item.list-three{
+        grid-column-end: 1;
+        grid-column-start: 2;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+
+    .footer-list-item.list-four{
+        grid-column-end: 2;
+        grid-column-start: 3;
+        grid-row-start: 5;
+        grid-row-end: 5;
     }
 
 }
@@ -1543,34 +1581,6 @@ a {
     .translation-hr{
         margin: 25px;
     }
-
-    .footer-list-item.list-one{
-        grid-column-end: 1;
-        grid-column-start: 2;
-        grid-row-start: 4;
-        grid-row-end: 4;
-    }
-
-    .footer-list-item.list-two{
-        grid-column-end: 2;
-        grid-column-start: 3;
-        grid-row-start: 4;
-        grid-row-end: 4;
-    }
-
-    .footer-list-item.list-three{
-        grid-column-end: 1;
-        grid-column-start: 2;
-        grid-row-start: 5;
-        grid-row-end: 5;
-    }
-
-    .footer-list-item.list-four{
-        grid-column-end: 2;
-        grid-column-start: 3;
-        grid-row-start: 5;
-        grid-row-end: 5;
-    }
     
     .footer-section {
         padding: 0px 0px;
@@ -1582,6 +1592,9 @@ a {
         padding: 25px 0px;
     }
 
+    .fix-size{
+    min-width: 1px;
+    }
     /* .header .fix-size {
         padding: 30px 10px 20px;
     } */
@@ -1604,7 +1617,7 @@ a {
     }
     .sec-two-title {
         padding: 30px 0;
-        width: 300px;
+        width: 100%;
     }
         
     .sec-two-content{
@@ -1624,8 +1637,12 @@ a {
     }
     
     .box-title {
-        width: 300px;
+        width: 100%;
         padding: 25px 10px;
+    }
+
+    .box-text {
+        width: 300px;
     }
 
     .cardbox {
@@ -1667,4 +1684,5 @@ a {
         padding: 0 0 25px;
         padding-top: 30px 10px;
     }
+
 }
